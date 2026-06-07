@@ -9,7 +9,7 @@ function App() {
       </h1>
 
       <p className="text-2xl text-gray-300 text-center mb-10">
-        Étudiante en développement web & IA au Maroc MA
+        Étudiante en développement web & IA au Maroc
       </p>
 
       <div className="flex gap-5 mb-24">
@@ -26,39 +26,41 @@ function App() {
 
       {/* SKILLS */}
 
-      <div className="grid md:grid-cols-3 gap-8 w-full max-w-6xl">
+      <section className="mt-10 text-center">
 
-        <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 hover:scale-105 transition">
-          <h2 className="text-4xl font-bold text-purple-400 mb-5">
+        <h2 className="text-6xl font-bold text-purple-500 mb-16">
+          Skills
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-5">
+
+          <span className="bg-purple-600 px-6 py-3 rounded-2xl text-xl">
             React
-          </h2>
+          </span>
 
-          <p className="text-gray-400 text-xl leading-10">
-            Création d’interfaces modernes et rapides avec React + TypeScript.
-          </p>
+          <span className="bg-purple-600 px-6 py-3 rounded-2xl text-xl">
+            TypeScript
+          </span>
+
+          <span className="bg-purple-600 px-6 py-3 rounded-2xl text-xl">
+            Tailwind CSS
+          </span>
+
+          <span className="bg-purple-600 px-6 py-3 rounded-2xl text-xl">
+            JavaScript
+          </span>
+
+          <span className="bg-purple-600 px-6 py-3 rounded-2xl text-xl">
+            HTML
+          </span>
+
+          <span className="bg-purple-600 px-6 py-3 rounded-2xl text-xl">
+            CSS
+          </span>
+
         </div>
 
-        <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 hover:scale-105 transition">
-          <h2 className="text-4xl font-bold text-purple-400 mb-5">
-            IA
-          </h2>
-
-          <p className="text-gray-400 text-xl leading-10">
-            Passionnée par l’intelligence artificielle et le machine learning.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 hover:scale-105 transition">
-          <h2 className="text-4xl font-bold text-purple-400 mb-5">
-            UI/UX
-          </h2>
-
-          <p className="text-gray-400 text-xl leading-10">
-            Design responsive, moderne et expérience utilisateur fluide.
-          </p>
-        </div>
-
-      </div>
+      </section>
 
       {/* PROJECTS */}
 
@@ -101,6 +103,32 @@ function App() {
             </button>
 
           </div>
+
+        </div>
+
+      </section>
+
+      {/* EDUCATION */}
+
+      <section className="mt-32 w-full max-w-6xl">
+
+        <h2 className="text-6xl font-bold text-center text-purple-500 mb-16">
+          Education
+        </h2>
+
+        <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800">
+
+          <h3 className="text-4xl font-bold mb-4">
+            Université Cadi Ayyad
+          </h3>
+
+          <p className="text-2xl text-gray-400 mb-4">
+            Développement Web & Intelligence Artificielle
+          </p>
+
+          <p className="text-xl text-gray-500">
+            Marrakech, Maroc • 2023 - 2025
+          </p>
 
         </div>
 
