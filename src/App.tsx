@@ -1,99 +1,149 @@
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6">
+    <div className="min-h-screen bg-black text-white flex flex-col items-center px-6 py-20">
 
-      <h1 className="text-6xl font-bold text-purple-500 mb-4">
+      {/* HERO */}
+
+      <h1 className="text-7xl font-bold text-purple-500 text-center mb-6">
         Doha Portfolio
       </h1>
 
-      <p className="text-xl text-gray-300 mb-8 text-center">
+      <p className="text-2xl text-gray-300 text-center mb-10">
         Étudiante en développement web & IA au Maroc MA
       </p>
 
-      <div className="flex gap-4">
+      <div className="flex gap-5 mb-24">
 
-        <button className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-2xl text-lg transition">
+        <button className="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-2xl text-xl transition">
           Mes Projets
         </button>
 
-        <button className="border border-white px-6 py-3 rounded-2xl text-lg hover:bg-white hover:text-black transition">
+        <button className="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-2xl text-xl transition">
           Contact
         </button>
 
       </div>
 
-      <div className="mt-16 grid md:grid-cols-3 gap-6 w-full max-w-5xl">
+      {/* SKILLS */}
 
-        <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
-          <h2 className="text-2xl font-semibold mb-3 text-purple-400">
+      <div className="grid md:grid-cols-3 gap-8 w-full max-w-6xl">
+
+        <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 hover:scale-105 transition">
+          <h2 className="text-4xl font-bold text-purple-400 mb-5">
             React
           </h2>
 
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-xl leading-10">
             Création d’interfaces modernes et rapides avec React + TypeScript.
           </p>
         </div>
 
-        <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
-          <h2 className="text-2xl font-semibold mb-3 text-purple-400">
+        <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 hover:scale-105 transition">
+          <h2 className="text-4xl font-bold text-purple-400 mb-5">
             IA
           </h2>
 
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-xl leading-10">
             Passionnée par l’intelligence artificielle et le machine learning.
           </p>
         </div>
 
-        <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
-          <h2 className="text-2xl font-semibold mb-3 text-purple-400">
+        <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 hover:scale-105 transition">
+          <h2 className="text-4xl font-bold text-purple-400 mb-5">
             UI/UX
           </h2>
 
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-xl leading-10">
             Design responsive, moderne et expérience utilisateur fluide.
           </p>
         </div>
 
       </div>
-<section className="mt-24 max-w-5xl w-full">
 
-  <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">
-    Mes Projets
-  </h2>
+      {/* PROJECTS */}
 
-  <div className="grid md:grid-cols-2 gap-8">
+      <section className="mt-32 w-full max-w-6xl">
 
-    <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
-      <h3 className="text-2xl font-semibold mb-4">
-        Site E-commerce
-      </h3>
+        <h2 className="text-6xl font-bold text-center text-purple-500 mb-16">
+          Mes Projets
+        </h2>
 
-      <p className="text-gray-400 mb-4">
-        Boutique moderne développée avec React et Tailwind CSS.
-      </p>
+        <div className="grid md:grid-cols-2 gap-10">
 
-      <button className="bg-purple-600 px-5 py-2 rounded-xl">
-        Voir Projet
-      </button>
-    </div>
+          <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 hover:scale-105 transition">
 
-    <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
-      <h3 className="text-2xl font-semibold mb-4">
-        Application IA
-      </h3>
+            <h3 className="text-4xl font-bold mb-5">
+              Site E-commerce
+            </h3>
 
-      <p className="text-gray-400 mb-4">
-        Projet intelligent utilisant l’intelligence artificielle.
-      </p>
+            <p className="text-gray-400 text-xl mb-8 leading-10">
+              Boutique moderne développée avec React et Tailwind CSS.
+            </p>
 
-      <button className="bg-purple-600 px-5 py-2 rounded-xl">
-        Voir Projet
-      </button>
-    </div>
+            <button className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-2xl text-lg transition">
+              Voir Projet
+            </button>
 
-  </div>
+          </div>
 
-</section>
+          <div className="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 hover:scale-105 transition">
+
+            <h3 className="text-4xl font-bold mb-5">
+              Application IA
+            </h3>
+
+            <p className="text-gray-400 text-xl mb-8 leading-10">
+              Projet intelligent utilisant l’intelligence artificielle.
+            </p>
+
+            <button className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-2xl text-lg transition">
+              Voir Projet
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* CONTACT */}
+
+      <section className="mt-32 text-center">
+
+        <h2 className="text-6xl font-bold text-purple-500 mb-8">
+          Contact
+        </h2>
+
+        <p className="text-2xl text-gray-400 mb-4">
+          Email : doha@example.com
+        </p>
+
+        <p className="text-2xl text-gray-400 mb-10">
+          Marrakech, Maroc
+        </p>
+
+        <div className="flex justify-center gap-5">
+
+          <a
+            href="https://github.com/doha20876"
+            target="_blank"
+            className="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-2xl text-xl transition"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            className="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-2xl text-xl transition"
+          >
+            LinkedIn
+          </a>
+
+        </div>
+
+      </section>
+
     </div>
   )
 }
